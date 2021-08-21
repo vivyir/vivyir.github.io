@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+}
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+.top_navbar {  
+    text-align: center;
+}
+p.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.button_border {
+    border: 1px solid #bbb;
+    padding: 3px;
+}
+hr.separator {
+    border-top: 6px solid #bbb;
+    left: 0;
+    right: 0;
+}
+.bottom_info {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+}
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: rgb(133, 238, 252);
+}
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color: rgb(133, 238, 252);
+}
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    color: rgb(204, 249, 255);
+}
+/* selected link */
+a:active {
+    color: #a1c2ff;
+}

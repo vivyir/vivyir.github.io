@@ -5,13 +5,26 @@
         <title>phoenix_ir_'s corner</title>
         <link rel="shortcut icon" href="./favicon.ico">
         <link rel="stylesheet" href="./main.css">
-        <meta content="phoenix_ir_'s corner" property="og:title" />
-        <meta content="the place for phoenix_ir_'s archival projects and other miscellaneous stuff" property="og:description" />
-        <meta content="http://phnixir.strangled.net" property="og:url" />
-        <meta content="http://phnixir.strangled.net/thumbnail.png" property="og:image" />
-        <meta content="#B54376" data-react-helmet="true" name="theme-color" />
     </head>
     <style>
+        #monero {
+            display: none;
+        }
+        #monero:target {
+            display: block;
+        }
+        #bitcoin {
+            display: none;
+        }
+        #bitcoin:target {
+            display: block;
+        }
+        textarea {
+            height: 100%;
+            width: 100%;
+            resize: none;
+            box-sizing: border-box;
+        }
     </style>
     <body>
         <div class="top_navbar">
@@ -25,9 +38,17 @@
         </div>
         <hr class="separator">
         <div class="main">
-            <!-- hand-written html is just too clean! -->
+            <p class="center">since i want to stay psuedonymous and some other reasons i only take donations under either bitcoin (which will get converted to xmr anyways) or monero, i appreciate every satoshi/piconero!</p>
             <div class="center">
-                <p>hello yes i am phoenix_ir_</p>
+                <a href="#monero" class="button_border">Monero address</a>
+                <a href="#bitcoin" class="button_border">Bitcoin address</a>
+                </br>
+                <section id="monero">
+                    <textarea readonly rows="1">43DsZDhCnfaE6kTbASnXRcFtR66S4NrF4CNbM8gSSgpuSCKKubTpj7FW6vNQ2rcu2WMNk28g8q7zQWcz9rZZ3dCBRmX3fdu</textarea>
+                </section>
+                <section id="bitcoin">
+                    <textarea readonly rows="1">1P7azUz1AK61ueiEwNWpi7wmDPX6pv3eov</textarea>
+                </section>
             </div>
         </div>
         <div class="bottom_info">
